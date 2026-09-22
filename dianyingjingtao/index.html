@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影惊涛骇浪-灾难灾难片深度解析与观看指南</title>
+    <meta name="description" content="本站提供电影《惊涛骇浪》的深度解析、剧情简介、角色分析及观影指南。涵盖灾难片类型特点、视听效果评价及经典台词赏析。">
+    <meta name="keywords" content="电影惊涛骇浪, 惊涛骇浪影评, 灾难片推荐, 惊涛骇浪剧情">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #e63946;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --spacing: 20px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/ocean/1600/900') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #c92a37;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .info-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .info-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Plot Section */
+        .plot-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .plot-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .plot-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .plot-content p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+            text-align: justify;
+        }
+
+        /* Analysis List */
+        .analysis-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .analysis-item {
+            background: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .analysis-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .analysis-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* Cast Section */
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .cast-card {
+            text-align: center;
+        }
+
+        .cast-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+            background-color: #ddd;
+        }
+
+        .cast-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cast-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .cast-role {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-question:hover {
+            background-color: #f0f0f0;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+            display: none;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #ccc;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .plot-container {
+                grid-template-columns: 1fr;
+            }
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <div class="logo">惊涛<span>骇浪</span>影评</div>
+        <nav>
+            <ul>
+                <li><a href="#intro">影片简介</a></li>
+                <li><a href="#plot">剧情解析</a></li>
+                <li><a href="#analysis">看点分析</a></li>
+                <li><a href="#cast">主演阵容</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>直面自然的伟力</h1>
+        <p>深度解析灾难巨制《惊涛骇浪》，探讨危机下的生存抉择与人性的光辉。</p>
+        <a href="#plot" class="btn">开始阅读</a>
+    </div>
+</section>
+
+<main class="container">
+    <!-- Basic Info -->
+    <section id="intro">
+        <div class="section-title">
+            <h2>影片基础信息</h2>
+            <p>了解这部灾难片的核心要素与制作背景</p>
+        </div>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>上映年份</h3>
+                <p>2022年</p>
+            </div>
+            <div class="info-card">
+                <h3>类型</h3>
+                <p>灾难 / 动作 / 剧情</p>
+            </div>
+            <div class="info-card">
+                <h3>导演</h3>
+                <p>冯小宁</p>
+            </div>
+            <div class="info-card">
+                <h3>关键词</h3>
+                <p>海啸、救援、团结</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plot Analysis -->
+    <section id="plot">
+        <div class="section-title">
+            <h2>剧情深度解析</h2>
+            <p>从宏大的灾难场面到细腻的情感脉络</p>
+        </div>
+        <div class="plot-container">
+            <div class="plot-image">
+                <img src="https://picsum.photos/seed/wave/800/500" alt="惊涛骇浪电影海报风格">
+            </div>
+            <div class="plot-content">
+                <h3>末日降临与生死时速</h3>
+                <p>影片以一场突如其来的超级海啸席卷沿海城市为开端，瞬间摧毁了现代文明的表象。故事聚焦于一支由气象学家、救援队长和普通市民组成的救援小队，他们在时间极度紧迫的情况下，必须在崩塌的桥梁和被淹没的街道中寻找生存通道。</p>
+                <p>除了惊心动魄的逃生过程，影片更着重刻画了灾难面前的人性百态。面对亲人的生离死别，角色的选择经历了从恐惧到坚定的转变。导演通过大量的实景特效与CG结合，还原了海啸吞噬一切的视觉冲击力，同时用紧凑的叙事节奏让观众始终紧绷神经。</p>
+                <p>影片的高潮部分并非单纯的逃生，而是对“希望”二字的重新定义。在绝望的深渊中，人性的互助成为对抗自然伟力的唯一武器。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Points -->
+    <section id="analysis">
+        <div class="section-title">
+            <h2>影片看点分析</h2>
+            <p>为什么这部电影值得一看？</p>
+        </div>
+        <div class="analysis-list">
+            <div class="analysis-item">
+                <h4>视听语言的极致运用</h4>
+                <p>影片在音效设计上极具沉浸感，海浪的轰鸣声与心跳声交织，极大地增强了临场感。IMAX画幅的运用让观众仿佛置身于灾难中心。</p>
+            </div>
+            <div class="analysis-item">
+                <h4>角色弧光的完整塑造</h4>
+                <p>主要角色并非脸谱化的英雄，每个人都有自己的软肋与恐惧。影片通过细腻的表演展现了角色在极端环境下的心理变化。</p>
+            </div>
+            <div class="analysis-item">
+                <h4>环保与警示主题</h4>
+                <p>作为一部灾难片，它不仅是娱乐产品，更是对人类与自然关系的深刻反思。影片通过灾难的起因暗示了生态保护的重要性。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cast -->
+    <section id="cast">
+        <div class="section-title">
+            <h2>主要演员阵容</h2>
+            <p>实力派演员的精彩演绎</p>
+        </div>
+        <div class="cast-grid">
+            <div class="cast-card">
+                <div class="cast-avatar"><img src="https://picsum.photos/seed/actor1/200/200" alt="演员头像"></div>
+                <div class="cast-name">李连杰</div>
+                <div class="cast-role">饰演 救援队长</div>
+            </div>
+            <div class="cast-card">
+                <div class="cast-avatar"><img src="https://picsum.photos/seed/actor2/200/200" alt="演员头像"></div>
+                <div class="cast-name">张静初</div>
+                <div class="cast-role">饰演 气象专家</div>
+            </div>
+            <div class="cast-card">
+                <div class="cast-avatar"><img src="https://picsum.photos/seed/actor3/200/200" alt="演员头像"></div>
+                <div class="cast-name">杜江</div>
+                <div class="cast-role">饰演 消防员</div>
+            </div>
+            <div class="cast-card">
+                <div class="cast-avatar"><img src="https://picsum.photos/seed/actor4/200/200" alt="演员头像"></div>
+                <div class="cast-name">李沁</div>
+                <div class="cast-role">饰演 记者</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="section-title">
+            <h2>常见问题 (FAQ)</h2>
+            <p>关于电影惊涛骇浪的疑问解答</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">《惊涛骇浪》是否基于真实事件改编？</div>
+                <div class="faq-answer">影片虽然具有现实主义的灾难背景，但主要剧情为虚构创作，旨在通过艺术加工反映灾难发生时的普遍社会状态。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">观看这部电影需要准备什么？</div>
+                <div class="faq-answer">建议佩戴耳机观看以获得最佳的音效体验，同时在IMAX影厅或大屏幕设备上观看效果最佳。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">影片适合儿童观看吗？</div>
+                <div class="faq-answer">影片包含大量惊险、爆破及灾难场景，可能对心理承受能力较弱的儿童造成惊吓，建议家长根据孩子年龄谨慎选择。</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于本站</h4>
+                <p style="color: #ccc; font-size: 0.9rem;">本站致力于提供最优质的影视解析与观影指南，为影迷打造专业的交流与分享平台。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#intro">影片简介</a></li>
+                    <li><a href="#plot">剧情解析</a></li>
+                    <li><a href="#analysis">看点分析</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>相关资源</h4>
+                <ul>
+                    <li><a href="#">高清剧照</a></li>
+                    <li><a href="#">幕后花絮</a></li>
+                    <li><a href="#">影评专栏</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 惊涛骇浪影评. 保留所有权利. 本站内容仅供学习交流使用.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ Toggle Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>

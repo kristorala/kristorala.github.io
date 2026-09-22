@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="使徒行者电视剧官网 - 提供使徒行者系列电视剧全集观看、角色介绍、剧情解析、幕后花絮及经典台词分享。深入了解程峰、徐天堂等人物故事。">
+    <meta name="keywords" content="使徒行者电视剧,使徒行者,TVB剧集,程峰,徐天堂,港剧推荐">
+    <title>使徒行者电视剧-港剧经典与角色深度解析平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #004d40;
+            --accent-color: #ffab00;
+            --bg-color: #f5f5f5;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-radius: 8px;
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #004d40 0%, #00695c 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 171, 0, 0.4);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 40px auto;
+            padding: 0 var(--spacing-unit);
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .episode-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .episode-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .episode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .episode-thumb {
+            width: 100%;
+            height: 120px;
+            background-color: #ddd;
+            object-fit: cover;
+        }
+
+        .episode-info {
+            padding: 10px;
+        }
+
+        .episode-info h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .episode-info p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Character Profiles */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .character-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        .character-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            background: #e0f2f1;
+            color: var(--primary-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .ranking-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .ranking-list li:last-child {
+            border-bottom: none;
+        }
+
+        .rank-num {
+            width: 24px;
+            height: 24px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+
+        .rank-num.top-1 {
+            background: #ffab00;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fafafa;
+        }
+
+        .faq-question:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-secondary);
+            display: none;
+            border-top: 1px solid #eee;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #263238;
+            color: #b0bec5;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0 15px;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--primary-color);
+                padding: 20px;
+            }
+
+            nav.open {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <span>◆</span> 使徒行者电视剧
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#episodes">剧集全集</a></li>
+                <li><a href="#characters">角色档案</a></li>
+                <li><a href="#analysis">剧情解析</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>潜伏在黑暗中的光明</h1>
+        <p>重温TVB巅峰警匪剧《使徒行者》，探索程峰与徐天堂之间错综复杂的信任与背叛。深度解析剧情、人物关系及经典台词。</p>
+        <a href="#episodes" class="btn btn-primary">开始观看 / 浏览</a>
+    </div>
+</div>
+
+<main class="container">
+    <!-- Left Content -->
+    <div class="content">
+        <!-- Featured Analysis -->
+        <section id="analysis">
+            <h2 class="section-title">剧集深度解析</h2>
+            <article>
+                <h3>卧底生涯的极限拉扯</h3>
+                <p>《使徒行者》作为TVB近年来最成功的警匪剧之一，其核心魅力在于对“卧底”这一职业的深刻描绘。故事围绕着程峰（苗侨伟 饰）展开，他在警队与黑帮之间如履薄冰，不仅要完成上级的任务，还要面对兄弟情义的考验。</p>
+                <br>
+                <p>剧中最引人入胜的设定莫过于“使徒”的代号。这不仅是组织内部的暗语，更象征着一种牺牲与救赎。在第三季中，故事线进一步扩展，引入了更多关于组织内讧和高层阴谋的线索，让观众在紧张刺激的枪战之外，看到了对体制和权力的反思。</p>
+            </article>
+        </section>
+
+        <!-- Episodes List -->
+        <section id="episodes">
+            <h2 class="section-title">剧集观看指南</h2>
+            <div class="episode-list">
+                <div class="episode-card">
+                    <img src="https://picsum.photos/seed/ep1/300/200" alt="使徒行者剧照" class="episode-thumb">
+                    <div class="episode-info">
+                        <h3>第01集：初入江湖</h3>
+                        <p>程峰接受任务，深入帮派内部。</p>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <img src="https://picsum.photos/seed/ep2/300/200" alt="使徒行者剧照" class="episode-thumb">
+                    <div class="episode-info">
+                        <h3>第02集：信任危机</h3>
+                        <p>警局内部出现内鬼，气氛紧张。</p>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <img src="https://picsum.photos/seed/ep3/300/200" alt="使徒行者剧照" class="episode-thumb">
+                    <div class="episode-info">
+                        <h3>第03集：兄弟反目</h3>
+                        <p>程峰与挚友在利益面前产生裂痕。</p>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <img src="https://picsum.photos/seed/ep4/300/200" alt="使徒行者剧照" class="episode-thumb">
+                    <div class="episode-info">
+                        <h3>第04集：真相大白</h3>
+                        <p>调查组发现关键证据。</p>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <img src="https://picsum.photos/seed/ep5/300/200" alt="使徒行者剧照" class="episode-thumb">
+                    <div class="episode-info">
+                        <h3>第05集：绝地反击</h3>
+                        <p>程峰制定计划，准备收网。</p>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <img src="https://picsum.photos/seed/ep6/300/200" alt="使徒行者剧照" class="episode-thumb">
+                    <div class="episode-info">
+                        <h3>第06集：大结局</h3>
+                        <p>最终决战，正义得到伸张。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Gallery -->
+        <section id="characters">
+            <h2 class="section-title">核心角色档案</h2>
+            <div class="character-grid">
+                <div class="character-card">
+                    <img src="https://picsum.photos/seed/char1/200/200" alt="程峰" class="avatar">
+                    <h3>程峰</h3>
+                    <p>代号：蓝天使</p>
+                    <p>警队精英，行事果断，为了正义不惜牺牲一切。</p>
+                    <div class="tags">
+                        <span class="tag">主角</span>
+                        <span class="tag">卧底</span>
+                        <span class="tag">义气</span>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="https://picsum.photos/seed/char2/200/200" alt="徐天堂" class="avatar">
+                    <h3>徐天堂</h3>
+                    <p>代号：蓝天使（原）</p>
+                    <p>帮派高层，心思缜密，对程峰有着复杂的情感。</p>
+                    <div class="tags">
+                        <span class="tag">反派</span>
+                        <span class="tag">智囊</span>
+                        <span class="tag">兄弟</span>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="https://picsum.photos/seed/char3/200/200" alt="欢喜" class="avatar">
+                    <h3>欢喜</h3>
+                    <p>代号：蓝天使（原）</p>
+                    <p>程峰的搭档，性格开朗，是团队中的润滑剂。</p>
+                    <div class="tags">
+                        <span class="tag">配角</span>
+                        <span class="tag">搞笑</span>
+                        <span class="tag">忠诚</span>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="https://picsum.photos/seed/char4/200/200" alt="秦沛" class="avatar">
+                    <h3>秦沛</h3>
+                    <p>警队高层</p>
+                    <p>老谋深算的督察，在各方势力间周旋。</p>
+                    <div class="tags">
+                        <span class="tag">关键人物</span>
+                        <span class="tag">幕后</span>
+                        <span class="tag">操盘手</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-widget">
+            <h3 style="margin-bottom: 15px;">热门话题</h3>
+            <ul class="ranking-list">
+                <li><span class="rank-num top-1">1</span> <a href="#">使徒行者第三季结局</a></li>
+                <li><span class="rank-num top-2">2</span> <a href="#">程峰最后和谁在一起</a></li>
+                <li><span class="rank-num top-3">3</span> <a href="#">蓝天使真实身份揭秘</a></li>
+                <li><span class="rank-num">4</span> <a href="#">TVB经典港剧TOP10</a></li>
+                <li><span class="rank-num">5</span> <a href="#">苗侨伟近况</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-widget">
+            <h3 style="margin-bottom: 15px;">观看提示</h3>
+            <p style="font-size: 0.9rem; color: #666;">建议在PC端观看以获得最佳体验。本站提供高清全集资源，支持手机端在线播放。</p>
+        </div>
+
+        <div class="sidebar-widget">
+            <h3 style="margin-bottom: 15px;">剧集评分</h3>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 2rem; color: #ffab00;">★</span>
+                <span style="font-size: 1.5rem; font-weight: bold;">9.2</span>
+                <span style="font-size: 0.8rem; color: #999;">/ 10</span>
+            </div>
+            <p style="margin-top: 10px; font-size: 0.85rem;">基于观众投票的综合评分</p>
+        </div>
+    </aside>
+</main>
+
+<!-- FAQ Section -->
+<section id="faq" style="background-color: #fff; padding: 40px 0;">
+    <div class="container">
+        <h2 class="section-title">常见问题 (FAQ)</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>《使徒行者》一共有几季？</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>《使徒行者》系列电视剧目前共有三季。前三季由TVB制作，第四季《使徒行者3：谋心局》为内地与TVB联合制作。每一季的剧情都相对独立，但也有连贯的人物关系。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>在哪里可以观看正版《使徒行者》？</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>您可以通过各大视频平台的VIP会员服务观看《使徒行者》。建议支持正版，以获得高清画质和流畅的播放体验。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>主角程峰的原型是谁？</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>程峰是虚构的文学形象，代表了香港警队中无数默默奉献的卧底警察。剧中展现的卧底生涯的艰辛、孤独以及面临的道德抉择，都有现实原型参考。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">联系合作</a>
+            <a href="#">隐私政策</a>
+        </div>
+        <p class="copyright">
+            &copy; 2023 使徒行者电视剧深度解析站. All Rights Reserved.<br>
+            本站内容仅供学习交流，不用于商业用途。
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    function toggleMenu() {
+        const nav = document.getElementById('main-nav');
+        nav.classList.toggle('open');
+    }
+
+    // FAQ Accordion
+    function toggleFaq(element) {
+        const parent = element.parentElement;
+        parent.classList.toggle('active');
+        
+        // Change icon
+        const icon = element.querySelector('span:last-child');
+        if (parent.classList.contains('active')) {
+            icon.textContent = '-';
+        } else {
+            icon.textContent = '+';
+        }
+    }
+</script>
+
+</body>
+                                              </html>

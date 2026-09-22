@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silk labo 在线 - 丝芙兰实验室系列官方商城与产品指南</title>
+    <meta name="description" content="丝芙兰实验室系列 silk labo 在线选购与使用指南。提供丝芙兰实验室系列的核心成分解析、产品功效对比、适用肤质建议及正品购买渠道。专注于科学护肤与成分分析。">
+    <meta name="keywords" content="silk labo 在线, 丝芙兰实验室, silk labo 系列, 成分护肤, 丝芙兰官方, 科学护肤">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #d4a373;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+            --border-radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbf7 0%, #f0ebe0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Content Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+        }
+
+        /* Ingredients Focus */
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .ingredient-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid rgba(0,0,0,0.03);
+            text-align: center;
+        }
+
+        .ingredient-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #f4f4f4;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .ingredient-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .ingredient-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Product Showcase */
+        .product-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            background-color: #e0e0e0;
+            height: 400px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .product-info h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #f0ebe0;
+            color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .product-desc {
+            margin-bottom: 25px;
+            color: var(--text-secondary);
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* Guide & FAQ */
+        .guide-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .guide-content blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            background-color: #fafafa;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+        
+        .faq-item:not(.active) .faq-question::after {
+            content: '+';
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #aaa;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .nav-links { display: none; } /* Simplified for mobile */
+            .guide-container { grid-template-columns: 1fr; }
+            .product-showcase { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">silk labo 在线</div>
+            <nav class="nav-links">
+                <a href="#ingredients" class="active">核心成分</a>
+                <a href="#products">明星产品</a>
+                <a href="#guide">选购指南</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>丝芙兰实验室系列</h1>
+                <p>基于皮肤科学的专业护肤解决方案。探索 silk labo 系列如何通过精准成分，为不同肤质提供高效、温和的修护体验。</p>
+                <a href="#products" class="btn btn-primary">探索产品系列</a>
+            </div>
+        </section>
+
+        <section id="ingredients">
+            <div class="container">
+                <h2 class="section-title">科学护肤，源于成分</h2>
+                <p style="text-align: center; margin-bottom: 40px; color: var(--text-secondary);">丝芙兰实验室系列的核心在于对有效成分的深入研究和科学配比。</p>
+                <div class="ingredients-grid">
+                    <article class="ingredient-card">
+                        <div class="ingredient-icon">🧪</div>
+                        <h3>丝滑精华液</h3>
+                        <p>核心保湿成分，模拟天然皮脂膜结构，为肌肤提供长效水润屏障，提升肌肤自身的锁水能力。</p>
+                    </article>
+                    <article class="ingredient-card">
+                        <div class="ingredient-icon">🌿</div>
+                        <h3>植萃修护</h3>
+                        <p>精选植物提取物，旨在舒缓敏感泛红，平衡肌肤微生态，增强肌肤对外界刺激的抵抗力。</p>
+                    </article>
+                    <article class="ingredient-card">
+                        <div class="ingredient-icon">💧</div>
+                        <h3>透明质酸</h3>
+                        <p>高浓度玻尿酸分子，深入肌底抓取水分，并在皮肤表面形成保湿网，解决干燥起皮问题。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="container">
+                <h2 class="section-title">明星产品系列</h2>
+                <div class="product-showcase">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/silklabo1/600/600" alt="丝滑精华液产品图">
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">保湿修护</span>
+                        <h2>丝滑精华液</h2>
+                        <p class="product-desc">专为干性及混合性肌肤设计。采用独特的乳化技术，使精华液与肌肤完美融合。使用后肌肤触感柔滑，长期使用可改善肌肤粗糙纹理，重现水光肌质感。</p>
+                        <ul class="feature-list">
+                            <li>强效锁水，持续12小时保湿</li>
+                            <li>富含神经酰胺，强化肌肤屏障</li>
+                            <li>质地轻盈，不油腻，易吸收</li>
+                            <li>适合敏感肌及孕妇使用</li>
+                        </ul>
+                        <div style="margin-top: 30px;">
+                            <a href="#" class="btn btn-primary">查看详情</a>
+                            <a href="#" class="btn" style="border: 1px solid #ddd; margin-left: 10px;">加入对比</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guide" style="background-color: #fff;">
+            <div class="container">
+                <h2 class="section-title">选购与使用指南</h2>
+                <div class="guide-container">
+                    <div class="guide-content">
+                        <h3>如何选择适合你的系列？</h3>
+                        <p>丝芙兰实验室系列通常根据肤质和护肤需求细分为不同配方。在选择时，请关注产品包装上的肤质标注。</p>
+                        <blockquote>
+                            “油性肌肤建议选择质地更清爽的啫喱状产品，而干性肌肤则更适合乳霜或精华霜质地。”
+                        </blockquote>
+                        <h3>正确的护肤步骤建议</h3>
+                        <p>1. <strong>洁面</strong>：使用温和的洁面产品清洁面部。<br>
+                        2. <strong>爽肤水</strong>：拍打爽肤水打开毛孔。<br>
+                        3. <strong>精华</strong>：取适量精华液，从面部中央向外轻轻按摩至吸收。<br>
+                        4. <strong>面霜</strong>：最后使用面霜封层，锁住水分。</p>
+                    </div>
+                    <aside>
+                        <h3>常见问题 (FAQ)</h3>
+                        <div class="faq-item">
+                            <div class="faq-question">silk labo 系列适合敏感肌吗？</div>
+                            <div class="faq-answer">是的，该系列产品经过皮肤科测试，配方温和，不添加酒精和香精，适合大多数敏感肌人群。</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">孕妇可以使用吗？</div>
+                            <div class="faq-answer">产品成分通常安全，但建议在使用前咨询医生，特别是孕期前三个月。</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">如何辨别正品？</div>
+                            <div class="faq-answer">建议通过丝芙兰官方渠道或授权零售商购买，注意查看包装印刷、批号及封口完整性。</div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>silk labo 在线</h4>
+                    <p style="color: #aaa; font-size: 0.9rem;">致力于提供最科学的护肤知识和优质的产品体验，陪伴您的肌肤健康之旅。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#ingredients">核心成分</a></li>
+                        <li><a href="#products">产品中心</a></li>
+                        <li><a href="#guide">护肤指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">使用条款</a></li>
+                        <li><a href="#">隐私声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Silk Labo Online Guide. All Rights Reserved. 本页面为信息展示与使用指南，非官方网站。
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的FAQ交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                item.querySelector('.faq-question').addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东京鬼祓师 - 深度解析与神秘学文化指南</title>
+    <meta name="description" content="东京鬼祓师专题页，为您提供关于日本都市传说、阴阳道文化、驱魔仪式及相关文学作品的深度解析与鉴赏指南。">
+    <meta name="keywords" content="东京鬼祓师, 阴阳道, 都市传说, 驱魔, 日本神秘学, 巫女, 神官">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c0e0e;
+            --secondary-color: #5a1e1e;
+            --accent-color: #d4af37;
+            --text-dark: #1a1a1a;
+            --text-light: #e0e0e0;
+            --bg-light: #f9f7f2;
+            --bg-dark: #121212;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(to bottom, rgba(44, 14, 14, 0.6), rgba(0, 0, 0, 0.9)), url('https://picsum.photos/seed/tokyo_temple/1920/1080') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            border-radius: 4px;
+            transition: var(--transition);
+            border: 2px solid var(--accent-color);
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--accent-color);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 0 auto;
+        }
+
+        /* Concept Section */
+        .concept-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+
+        .concept-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .concept-text p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .concept-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+
+        /* Culture Cards */
+        .culture-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 60px;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .culture-card {
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: 6px;
+            transition: var(--transition);
+            border-top: 3px solid var(--secondary-color);
+        }
+
+        .culture-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .culture-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .culture-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Featured List */
+        .featured-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-image {
+            height: 200px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .article-card:hover .article-image img {
+            transform: scale(1.05);
+        }
+
+        .article-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-tag {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .article-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+
+        .read-more {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .read-more::after {
+            content: '→';
+            margin-left: 5px;
+            transition: margin-left 0.2s;
+        }
+
+        .read-more:hover::after {
+            margin-left: 10px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: #ccc;
+            font-size: 0.95rem;
+            display: none;
+            padding-left: 10px;
+            border-left: 2px solid var(--accent-color);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-dark);
+            color: #888;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: #ccc;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Simplified for mobile */
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .concept-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <span>✦</span> 东京鬼祓师
+            </div>
+            <nav class="nav-links">
+                <a href="#concept">概念解析</a>
+                <a href="#culture">文化背景</a>
+                <a href="#featured">深度文章</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>都市迷雾中的守护者</h1>
+            <p>探索东京街头巷尾的神秘传说，解析古老的驱魔仪式与现代都市传说的交织。</p>
+            <a href="#concept" class="cta-button">开始探索</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- Concept Section -->
+        <section id="concept" class="concept-grid">
+            <div class="concept-text">
+                <h3>什么是“鬼祓师”？</h3>
+                <p>“鬼祓师”并非一个现代法律术语，而是指在传统日本神道教信仰中，专门负责驱除附着在人体、物品或土地上的“祟”与“鬼”的神官或巫女。在现代流行文化语境下，这一概念常被引申为在都市异象频发的现代东京，依然坚守传统仪式、与不可名状之物对抗的特殊职业群体。</p>
+                <p>这一设定融合了古老的阴阳道理论与克苏鲁式的不可知论，构建了一个既熟悉又充满未知的独特世界观。</p>
+                <p>通过神乐、式神、结界等手段，他们试图在混乱的现代社会中维持微妙的平衡。</p>
+            </div>
+            <div class="concept-image">
+                <img src="https://picsum.photos/seed/temple_shrine/800/600" alt="日本神社与神道教仪式">
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section id="culture" class="culture-section">
+            <div class="section-title">
+                <h2>文化背景与核心要素</h2>
+            </div>
+            <div class="culture-grid">
+                <article class="culture-card">
+                    <h4>阴阳道</h4>
+                    <p>日本本土的神道与中国的道教结合产物，研究天文、地理、历法及驱邪仪式的学问，是“鬼祓师”的理论基础。</p>
+                </article>
+                <article class="culture-card">
+                    <h4>式神</h4>
+                    <p>被神官命令、驱使的灵体。在鬼祓师的传说中，它们是执行清扫、侦查甚至战斗任务的得力助手。</p>
+                </article>
+                <article class="culture-card">
+                    <h4>祟与厄</h4>
+                    <p>源于神道教信仰，指因冒犯神明或触犯禁忌而产生的因果报应或精神污染，是鬼祓师主要对抗的对象。</p>
+                </article>
+                <article class="culture-card">
+                    <h4>神乐</h4>
+                    <p>古代神道教的祈祷仪式舞蹈，通过特定的动作和音律祈求神灵降临，净化现场污秽。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section id="featured">
+            <div class="section-title">
+                <h2>深度解析与相关故事</h2>
+            </div>
+            <div class="featured-list">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://picsum.photos/seed/tokyo_street_night/600/400" alt="东京夜空下的城市">
+                    </div>
+                    <div class="article-content">
+                        <span class="article-tag">都市传说</span>
+                        <h3>东京塔下的红伞：关于“逢魔之时”的观察记录</h3>
+                        <p>在黄昏与黑夜交替的瞬间，东京某些特定的地点会显现出异象。本文记录了多位目击者关于红伞怪谈的证词，并探讨了其背后的驱魔意义。</p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://picsum.photos/seed/ritual_sword/600/400" alt="传统仪式道具">
+                    </div>
+                    <div class="article-content">
+                        <span class="article-tag">装备解析</span>
+                        <h3>式神与除魔道具：从御币到咒符的演变</h3>
+                        <p>鬼祓师手中的武器不仅仅是装饰，更是封印邪恶的媒介。本文详细分析了古代式神的制作方法以及现代驱魔仪式中道具的使用规范。</p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://picsum.photos/seed/shrine_park/600/400" alt="古老神社">
+                    </div>
+                    <div class="article-content">
+                        <span class="article-tag">历史考据</span>
+                        <h3>从“祓户”到“祓除”：净化仪式的千年传承</h3>
+                        <p>追溯日本净化仪式的历史脉络，了解古代人们如何通过水、火等自然元素来驱除疾病与灾难，以及这一传统在现代社会的存续状态。</p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <section id="faq" class="faq-section">
+        <div class="section-title">
+            <h2 style="color: white;">常见问题</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">鬼祓师和普通神社巫女有什么区别？</div>
+                <div class="faq-answer">
+                    普通神社巫女主要负责神社的日常祭祀、管理以及接待参拜者。而“鬼祓师”这一概念通常特指在特定背景设定下，承担着对抗超自然邪恶、处理都市异变等特殊任务的职业群体，其工作性质更加偏向于“驱魔师”或“守护者”。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">现代东京真的存在鬼祓师吗？</div>
+                <div class="faq-answer">
+                    在现实历史中，确实存在负责特定仪式的神官，如“祓户大神”的祭司。但在现代都市传说和流行文化的语境中，“鬼祓师”更多是一种象征性的存在，代表着人们在面对未知恐惧时寻求心理慰藉和文化认同的幻想。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">如何区分普通的灵异现象和被“祟”缠身？</div>
+                <div class="faq-answer">
+                    传统说法认为，被“祟”缠身通常伴随着无法解释的疾病、精神恍惚、做噩梦，且在特定的时间或地点反复出现。而普通的灵异现象往往是一次性的惊吓。专业的鬼祓师会通过占卜和仪式来确认是否存在“祟”的迹象。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">投稿指南</a>
+            <a href="#">免责声明</a>
+            <a href="#">联系方式</a>
+        </div>
+        <p>&copy; 2023 东京鬼祓师专题站. All Rights Reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem; color: #555;">
+            本站内容仅供文化研究与娱乐参考，请勿迷信。
+        </p>
+    </footer>
+
+    <script>
+        // FAQ Interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

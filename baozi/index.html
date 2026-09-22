@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>包子-传统中式面点制作与美食文化指南</title>
+    <meta name="description" content="本站提供关于包子的全面指南，包括传统包子的制作方法、馅料配方、历史起源以及不同地域特色包子的介绍。无论您是面点爱好者还是寻找早餐灵感，这里都有详尽的食谱和技巧分享。">
+    <meta name="keywords" content="包子, 面点制作, 食谱, 传统美食, 早餐">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d4a373;
+            --secondary-color: #faedcd;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-color: #fdfbf7;
+            --white: #ffffff;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #faedcd 0%, #d4a373 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        /* 分类导航 */
+        .categories {
+            padding: 40px 0;
+            background-color: var(--white);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background-color: var(--bg-color);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .category-card:hover {
+            border-color: var(--primary-color);
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* 热门推荐 */
+        .featured {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .section-header .divider {
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .recipe-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .recipe-img-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recipe-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .recipe-card:hover .recipe-img-placeholder img {
+            transform: scale(1.05);
+        }
+
+        .recipe-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recipe-tag {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .recipe-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .recipe-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .recipe-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* 文化知识区 */
+        .culture-section {
+            background-color: var(--white);
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .culture-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .culture-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        .culture-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .culture-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 60px 0;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background-color: var(--white);
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-wrap: wrap;
+            }
+
+            nav ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                padding: 20px 0;
+                gap: 15px;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .culture-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .culture-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                🥟 <span>包子大全</span>
+            </a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#recipes">经典食谱</a></li>
+                    <li><a href="#categories">分类</a></li>
+                    <li><a href="#culture">文化历史</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>探索包子的美味世界</h1>
+                <p>从传统手工制作到现代创新口味，为您提供最详尽的包子制作指南与美食文化解读。</p>
+                <a href="#recipes" class="cta-button">开始学做包子</a>
+            </div>
+        </section>
+
+        <!-- 分类导航 -->
+        <section id="categories" class="categories">
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-card">
+                        <span class="category-icon">🥟</span>
+                        <div class="category-title">传统大包</div>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🥡</span>
+                        <div class="category-title">小笼包</div>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🥠</span>
+                        <div class="category-title">烧麦</div>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🥯</span>
+                        <div class="category-title">蒸饺</div>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🥘</span>
+                        <div class="category-title">甜味包</div>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🥚</span>
+                        <div class="category-title">素馅包</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门食谱 -->
+        <section id="recipes" class="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2>热门食谱推荐</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="recipe-grid">
+                    <!-- Recipe 1 -->
+                    <article class="recipe-card">
+                        <div class="recipe-img-placeholder">
+                            <img src="https://picsum.photos/seed/baozi1/400/300" alt="鲜肉大包制作过程">
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-tag">家常主食</span>
+                            <h3 class="recipe-title">经典猪肉大包</h3>
+                            <p class="recipe-desc">教你如何制作松软多汁、皮薄馅大的猪肉大包，掌握发面技巧与肉馅调制比例。</p>
+                            <div class="recipe-meta">
+                                <span class="meta-item">⏱ 2小时</span>
+                                <span class="meta-item">👨‍🍳 难度：中等</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Recipe 2 -->
+                    <article class="recipe-card">
+                        <div class="recipe-img-placeholder">
+                            <img src="https://picsum.photos/seed/baozi2/400/300" alt="韭菜鸡蛋包制作过程">
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-tag">素食首选</span>
+                            <h3 class="recipe-title">韭菜鸡蛋包子</h3>
+                            <p class="recipe-desc">清爽不油腻的韭菜鸡蛋馅包子，搭配金黄酥脆的底，是早餐桌上的常客。</p>
+                            <div class="recipe-meta">
+                                <span class="meta-item">⏱ 1.5小时</span>
+                                <span class="meta-item">👨‍🍳 难度：简单</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Recipe 3 -->
+                    <article class="recipe-card">
+                        <div class="recipe-img-placeholder">
+                            <img src="https://picsum.photos/seed/baozi3/400/300" alt="流心奶黄包制作过程">
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-tag">甜点点心</span>
+                            <h3 class="recipe-title">流心奶黄包</h3>
+                            <p class="recipe-desc">网红甜点奶黄包的详细做法，外皮Q弹，内馅香甜，适合下午茶享用。</p>
+                            <div class="recipe-meta">
+                                <span class="meta-item">⏱ 3小时</span>
+                                <span class="meta-item">👨‍🍳 难度：困难</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 文化历史 -->
+        <section id="culture" class="culture-section">
+            <div class="container">
+                <div class="culture-grid">
+                    <div class="culture-image">
+                        <img src="https://picsum.photos/seed/baozi_culture/600/400" alt="传统面点制作场景">
+                    </div>
+                    <div class="culture-text">
+                        <h2>包子的历史与演变</h2>
+                        <p>包子作为中国传统面点的重要组成部分，历史悠久。相传由诸葛亮发明，最初名为“蛮头”，后演变为如今的包子。</p>
+                        <p>从北方的猪肉大包到南方的小笼汤包，不同地域的气候与饮食习惯造就了包子千变万化的风味。制作包子不仅是一门手艺，更是一种传承了千年的饮食文化。</p>
+                        <p>无论是作为早餐快速补充能量，还是作为节日餐桌上的主食，包子始终以其独特的魅力占据着中国饮食版图的重要位置。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>制作常见问题解答</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            为什么我做的包子皮容易塌陷？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            包子皮塌陷通常是因为发酵过度、蒸制时间不够或者面皮不够劲道。建议控制好酵母的用量，发酵至两倍大即可，醒发后再上锅蒸，确保彻底熟透。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            如何防止包子破皮露馅？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            馅料水分过多是破皮的主要原因。在调制肉馅时，应分次加入葱姜水并朝一个方向搅拌上劲，最后包裹油封住水分。包制时捏紧收口，避免褶皱过多。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            冷冻的包子可以直接蒸吗？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            可以，但需要先解冻或冷水上锅。将冷冻包子直接放入蒸锅，加入冷水，水开后计时10-12分钟，然后关火焖3-5分钟，这样能保证包子松软不硬。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>关于包子大全</h3>
+                    <p>致力于分享最正宗、最实用的包子制作方法与美食文化，让每一位面点爱好者都能在家轻松享受美味。</p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#recipes">食谱大全</a></li>
+                        <li><a href="#categories">分类浏览</a></li>
+                        <li><a href="#faq">新手指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>联系方式</h3>
+                    <ul>
+                        <li>邮箱：contact@baozi-guide.com</li>
+                        <li>地址：美食文化街道123号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 包子大全. 保留所有权利.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+
+        // FAQ 手风琴效果
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // 关闭所有其他的
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('active');
+            });
+
+            // 如果之前没打开，则打开当前
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

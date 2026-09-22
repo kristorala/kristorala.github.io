@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="广东电视塔旅游攻略，介绍广州电视塔（小蛮腰）的历史背景、建筑特色、游览项目、交通指南及最佳观赏时间。为您提供全面的城市地标参观信息。">
+    <meta name="keywords" content="广东电视塔,广州电视塔,小蛮腰,广州塔,广州地标,观光塔,广州旅游">
+    <title>广东电视塔-广州城市地标观光与旅游指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --accent-color: #ff6b35;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white) !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .cta-btn:hover {
+            background-color: #004494;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.8), rgba(255, 107, 53, 0.8)), url('https://picsum.photos/seed/guangdongtv/1920/800.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .hero-btn {
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--bg-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Tour Info Section */
+        .tour-info {
+            background-color: var(--white);
+        }
+
+        .info-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 10px 25px;
+            border: 1px solid #ddd;
+            background: transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .info-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: var(--text-light);
+        }
+
+        .info-item li {
+            margin-bottom: 8px;
+        }
+
+        /* Ticket Section */
+        .tickets {
+            background: linear-gradient(to right, #0056b3, #004494);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .tickets h2 {
+            margin-bottom: 10px;
+        }
+
+        .tickets p {
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        .ticket-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .ticket-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 12px;
+            width: 280px;
+            text-align: left;
+            transition: var(--transition);
+        }
+
+        .ticket-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .ticket-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .ticket-price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .ticket-price span {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .ticket-features li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--bg-light);
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #999;
+            padding: 50px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ticket-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span>广东电视塔</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#features">特色</a></li>
+                    <li><a href="#tour">游览指南</a></li>
+                    <li><a href="#tickets">购票信息</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#tickets" class="cta-btn">立即购票</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>广州电视塔</h1>
+                <p>领略珠江新城璀璨天际线，体验中国第一高塔的非凡魅力。登高望远，俯瞰羊城风光，感受城市脉搏。</p>
+                <a href="#tour" class="hero-btn">查看游览指南</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://picsum.photos/seed/tower/600/400.jpg" alt="广东电视塔外观">
+                    </div>
+                    <div class="about-text">
+                        <h3>城市新地标：小蛮腰</h3>
+                        <p>广东电视塔，即广州电视塔，位于中国广东省广州市海珠区阅江西路222号，北临珠江，与珠江新城隔江相望。塔高600米，天线桅杆高146米，总高度600米，是中国第一高塔，世界第四高塔。</p>
+                        <p>塔身设计独特，由两个相互缠绕的菱形筒体结构组成，中上部逐渐向内收缩，形成优美的曲线，被誉为“小蛮腰”。它不仅是广州的城市地标，也是集广播电视发射、旅游观光、餐饮娱乐、科普教育于一体的综合性建筑。</p>
+                        <p>塔内设有极速云霄、摩天轮、垂直极限等世界级游乐设施，是体验高空刺激与浪漫观光的绝佳去处。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>核心游览亮点</h2>
+                    <p>全方位体验高空观光与科技魅力</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏙️</div>
+                        <h3>高空观光</h3>
+                        <p>拥有432米高的蜘蛛侠栈道，游客可体验悬空漫步的刺激，并在透明玻璃栈道上俯瞰脚下城市车水马龙。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎡</div>
+                        <h3>摩天轮</h3>
+                        <p>拥有世界最长的垂直观光摩天轮“广州塔·摩天轮”，轿厢采用全景落地玻璃设计，旋转一周约20分钟。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🍽️</div>
+                        <h3>美食体验</h3>
+                        <p>塔顶设有旋转餐厅，一边享受精致美食，一边欣赏360度无死角的广州夜景，是浪漫晚餐的首选之地。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>灯光秀</h3>
+                        <p>广东电视塔拥有中国最先进的LED灯光系统，每日定时上演绚丽的灯光秀，是夜间广州最亮的风景。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tour" class="tour-info">
+            <div class="container">
+                <div class="section-header">
+                    <h2>游览指南</h2>
+                    <p>了解票务信息、交通方式及最佳游览时间</p>
+                </div>
+                
+                <div class="info-tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'transport')">交通指南</button>
+                    <button class="tab-btn" onclick="openTab(event, 'time')">最佳时间</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tips')">游览贴士</button>
+                </div>
+
+                <div id="transport" class="tab-content active">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4>🚇 地铁交通</h4>
+                            <ul>
+                                <li>乘坐广州地铁3号线至【广州塔站】或【猎德站】。</li>
+                                <li>从B出口或E出口出站，步行约5-10分钟即可到达塔底广场。</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h4>🚢 轮渡体验</h4>
+                            <ul>
+                                <li>可乘坐珠江夜游游船，在江面上近距离欣赏电视塔的宏伟身姿。</li>
+                                <li>推荐路线：天字码头或大沙头码头出发，途经广州塔水域。</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h4>🚗 自驾停车</h4>
+                            <ul>
+                                <li>电视塔周边设有大型停车场（如海心沙广场停车场）。</li>
+                                <li>建议提前查询停车位情况，节假日车位较为紧张。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="time" class="tab-content">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4>🌅 日景游览</h4>
+                            <ul>
+                                <li>建议上午或下午前往，天气晴朗时可清晰拍摄城市全景。</li>
+                                <li>日落时分光线柔和，是拍摄剪影照片的最佳时机。</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h4>🌃 夜景游览</h4>
+                            <ul>
+                                <li>广州塔夜景最为迷人，建议晚上8点左右登塔。</li>
+                                <li>此时灯光秀刚刚开始，城市灯火通明，视觉效果最佳。</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h4>❄️ 季节建议</h4>
+                            <ul>
+                                <li>春秋两季气候宜人，适合户外观光。</li>
+                                <li>夏季注意防晒防暑，冬季注意保暖。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tips" class="tab-content">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4>🎫 票务预订</h4>
+                            <ul>
+                                <li>节假日及周末建议提前在线购票，现场排队时间较长。</li>
+                                <li>关注官方公众号或小程序，常有优惠活动。</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h4>🎒 携带物品</h4>
+                            <ul>
+                                <li>请勿携带打火机、易燃易爆物品及大型行李箱。</li>
+                                <li>建议穿着舒适的鞋子，栈道区域需步行较多。</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h4>📱 设施服务</h4>
+                            <ul>
+                                <li>塔内设有电梯、无障碍通道及母婴室。</li>
+                                <li>游客服务中心提供免费寄存、语音导览租赁服务。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tickets" class="tickets">
+            <div class="container">
+                <h2>票务参考</h2>
+                <p>价格仅供参考，具体以官方当日公示为准</p>
+                <div class="ticket-cards">
+                    <div class="ticket-card">
+                        <div class="ticket-name">观光票（单层）</div>
+                        <div class="ticket-price">¥100<span>/人</span></div>
+                        <ul class="ticket-features">
+                            <li>✅ 登塔观光（450米）</li>
+                            <li>✅ 蜘蛛侠栈道体验</li>
+                            <li>✅ 4D影院</li>
+                            <li>❌ 摩天轮</li>
+                        </ul>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-name">摩天轮套票</div>
+                        <div class="ticket-price">¥150<span>/人</span></div>
+                        <ul class="ticket-features">
+                            <li>✅ 登塔观光（450米）</li>
+                            <li>✅ 摩天轮体验（1圈）</li>
+                            <li>✅ 4D影院</li>
+                        </ul>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-name">尊享套票</div>
+                        <div class="ticket-price">¥288<span>/人</span></div>
+                        <ul class="ticket-features">
+                            <li>✅ 登塔观光（450米）</li>
+                            <li>✅ 摩天轮体验（2圈）</li>
+                            <li>✅ 极速云霄体验</li>
+                            <li>✅ 晚餐套餐</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">广东电视塔对身高有要求吗？</div>
+                        <div class="faq-answer">摩天轮和极速云霄等游乐设施对身高有特定限制，请以现场公示为准。观光部分无特殊限制。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">节假日人多吗？需要排队多久？</div>
+                        <div class="faq-answer">节假日游客量较大，建议提前通过官方渠道预约购票。周末及节假日排队时间可能长达2-3小时。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">塔内可以拍照吗？</div>
+                        <div class="faq-answer">观光区域允许拍照，但部分游乐设施（如摩天轮）内禁止使用闪光灯和自拍杆。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">广州塔晚上亮灯时间是什么时候？</div>
+                        <div class="faq-answer">广州塔每日19:30开始亮灯，21:00左右进入灯光秀高潮时段，建议晚上前往观赏。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于广东电视塔</h4>
+                    <p>广州电视塔（小蛮腰）是广州的地标性建筑，也是中国第一高塔。我们致力于为游客提供安全、优质的观光体验。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#tour">游览指南</a></li>
+                        <li><a href="#tickets">在线购票</a></li>
+                        <li><a href="#">游客服务</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>电话：020-8333 8333</li>
+                        <li>地址：广东省广州市海珠区阅江西路222号</li>
+                        <li>邮箱：info@gztower.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 广东电视塔旅游服务中心. All Rights Reserved. 本页面为信息展示页面，非官方网站。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching logic
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // FAQ Accordion logic
+        var faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(function(item) {
+            item.querySelector('.faq-question').addEventListener('click', function() {
+                var isActive = item.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(function(i) {
+                    i.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't already open
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+  </html>
